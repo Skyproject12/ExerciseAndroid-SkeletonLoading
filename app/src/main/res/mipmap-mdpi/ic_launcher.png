@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Preview.Login.LoginActivity">
+
+    <include
+        android:id="@+id/toolbar_login"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/text_tempat_nongkrong"
+        android:textColor="@color/colorAbuTua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_delapan"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/activity_margin_delapan"
+        android:text="@string/ayok_cari_tempat_nongkrong_mu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textColor="@color/colorHitam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_delapan"
+        android:layout_marginLeft="@dimen/activity_margin_delapan"
+        android:layout_marginTop="@dimen/activity_margin_enambelas"
+        android:layout_marginEnd="@dimen/activity_margin_delapan"
+        android:layout_marginRight="@dimen/activity_margin_delapan"
+        android:text="@string/masuk_dengan"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tempat_nongkrong" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/button_goog
